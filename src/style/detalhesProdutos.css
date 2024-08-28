@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+
+.detalhesProdutos{
+    display: flex;
+    gap: 20px;
+    width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.detalhesProdutos img{
+    width: 300px;
+    padding: 5px;
+}

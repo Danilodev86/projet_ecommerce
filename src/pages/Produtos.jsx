@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-
+import { useNavigate } from 'react-router-dom';
 
 function Produtos() {
 
     const [data, setData] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('https://fakestoreapi.com/products')
@@ -12,21 +13,26 @@ function Produtos() {
     }, []);
     console.log(data);
 
+      const Detalhes = (id) => {
+        navigate(`/produto/${id}`);
+      };
 
-    return (
+      return (
         <>
-        <div id="topo"> <h1>Portal do Revendedor</h1></div>
-        <div className="produtosFetch">
-            {data.map(item => (
-                <div className="produtos">
-                    <img width="180px" src={item.image} alt="" />
-                    <div id="title">{item.title}</div>
-                    <div id="price">{item.price}</div>
-                    <div id="description">{item.description}</div>
-
-                </div>
-            ))}
-        </div>
+            <div id="topo">
+                <h1>Portal do Revendedor</h1>
+            </div>
+            <div className="produtosFetch">
+                {data.map(item => (
+                    <button className="produtos" key={item.id} onClick={() => Detalhes(item.id)}>
+                        <img id="image" src={item.image} alt={item.title} />
+                        <div id="title">{item.title}</div>
+                        <div id="price">${item.price.toFixed(2)}</div>
+                        
+                    </button>
+                       
+                ))}
+            </div>
         </>
 
     )

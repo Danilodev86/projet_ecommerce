@@ -1,0 +1,89 @@
+.centerLogin {
+    margin-top: 10%;
+    border: 1px solid #ffffff; 
+    padding: 20px;
+    width: 420px; 
+    height: 100%;
+    border-radius: 10px; 
+    background-color: #e7e7e7; 
+}
+
+.centerLogin input {
+    border-radius: 5px; 
+    width: 100%;
+    max-width: 400px; 
+    height: 2rem; 
+    padding: 0.5rem; 
+    margin-bottom: 1rem; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+  
+}
+
+.login {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    
+}
+
+#loginUser {
+    background-color: rgb(93, 177, 93);
+    color: white;
+    border-radius: 10px;
+    width: 100%; 
+    max-width: 400px; 
+    height: 2rem; 
+    border: none; 
+    cursor: pointer; 
+}
+
+#loginUser:disabled {
+    background-color: #d3d3d3; 
+    color: #424141; 
+    border: 2px solid #a9a9a9;
+    cursor: not-allowed; 
+    opacity: 0.7; 
+}
+
+#restaurarSenha {
+    width: 95%;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0); 
+    font-size: 0.9rem; 
+    display: inline-block; 
+    margin-top: 1rem; 
+    transition: color 0.1s, transform 0.1s; 
+ 
+}
+
+
+#restaurarSenha:hover {
+    color: #170097; 
+    transform: scale(1.05); 
+}
+
+
+#cadastrarConta,
+#entrarGoogle {
+    color: rgb(46, 45, 45); 
+    border-radius: 10px; 
+    width: 100%; 
+    max-width: 400px; 
+    height: 2rem; 
+    border: 2px solid rgba(77, 77, 77, 0.5); 
+    background-color: transparent; 
+    cursor: pointer; 
+    transition: background-color 0.3s, border-color 0.3s; 
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 0.5rem; 
+}
+
+#entrarGoogle:hover,
+#cadastrarConta:hover {
+    border-color: rgb(138, 161, 138); 
+    background-color: rgba(24, 24, 24, 0.1); 
+}
