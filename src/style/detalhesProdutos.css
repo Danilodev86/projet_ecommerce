@@ -1,12 +1,8 @@
-body{
-    background-color: black;
-}
-
-
-.detalhesProdutos{
+/* .detalhesProdutos{
     display: flex;
     gap: 20px;
     width: 800px;
+    height: 400px;
     background-color: white;
     border-radius: 20px;
     padding: 10px;
@@ -14,6 +10,7 @@ body{
 }
 
 .detalhesProdutos img{
+    margin-top: 40px;
     width: 300px;
-    padding: 5px;
-}
+    padding: 15px;
+} */
