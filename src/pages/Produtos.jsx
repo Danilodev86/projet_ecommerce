@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import Moeda from "../ultis/formatCurrency";  // Importa o componente Moeda
 import CategoriaButton from "../components/CategoriaButton";
+import Footer from "../components/Footer";
+
 
 
 function Produtos() {
@@ -41,6 +43,9 @@ function Produtos() {
             </span>
           </button>
         ))}
+      </div>
+      <div>
+      <Footer />
       </div>
     </>
   );

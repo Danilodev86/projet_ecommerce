@@ -1,0 +1,47 @@
+.footer {
+
+  background: linear-gradient(to bottom, rgb(119, 121, 145), rgb(0, 0, 0));
+  /* Gradiente linear do azul claro para o azul mais escuro verticalmente */
+
+  color: #fff;
+  /* Cor do texto */
+  padding: 20px;
+  /* Espaçamento interno */
+  text-align: center;
+  /* Alinha o texto ao centro */
+}
+
+.footer-content {
+  display: flex;
+  /* Alinha os itens horizontalmente */
+  flex-direction: column;
+  /* Coloca os itens em uma coluna */
+  align-items: center;
+  /* Centraliza os itens horizontalmente */
+}
+
+.footer-links {
+  margin-bottom: 20px;
+  /* Espaçamento abaixo dos links */
+}
+
+.footer-links a {
+  color: #fff;
+  /* Cor dos links */
+  text-decoration: none;
+  /* Remove o sublinhado dos links */
+  margin: 0 15px;
+  /* Espaçamento entre os links */
+  font-size: 16px;
+  /* Tamanho da fonte dos links */
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  /* Adiciona sublinhado ao passar o mouse */
+}
+
+.footer-info p {
+  margin: 5px 0;
+  /* Espaçamento entre as linhas de texto */
+}

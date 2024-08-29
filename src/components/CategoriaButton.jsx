@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../style/CategoriaButton.css'; // Importa o arquivo CSS para estilizar o dropdown
 import { TbCategoryPlus } from "react-icons/tb";
+
 const CategoriaButton = () => {
   const [isOpen, setIsOpen] = useState(false);
 
