@@ -1,18 +1,27 @@
 /* Contêiner do dropdown */
 .dropdown {
+    padding: 20px;
     position: relative; /* Para que o menu seja posicionado relativamente a esse contêiner */
     display: inline-block;
   }
   
   /* Estilização do botão do dropdown */
   .dropdown-button {
-    background-color: #007bff; /* Cor de fundo do botão */
+    display: flex;
+    justify-content: space-between;
+    text-align:left;
+    background-color: rgb(90, 155, 240);; /* Cor de fundo do botão */
     color: #fff; /* Cor do texto do botão */
     border: none; /* Remove a borda padrão do botão */
     padding: 10px 20px; /* Espaçamento interno do botão */
     font-size: 16px; /* Tamanho da fonte do botão */
     border-radius: 5px; /* Arredonda os cantos do botão */
     cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    width: 200px;
+}
+
+  .dropdown-button  span{
+    width: 30%;
   }
   
   /* Estilização do menu suspenso */

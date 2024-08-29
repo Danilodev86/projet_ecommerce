@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Moeda from "../ultis/formatCurrency";  // Importa o componente Moeda
 import CategoriaButton from "../components/CategoriaButton";
 
+
 function Produtos() {
   const [data, setData] = useState([]);
   const navigate = useNavigate();
@@ -20,10 +21,15 @@ function Produtos() {
   return (
     <>
       <div id="topo">
-       <div>
-        <CategoriaButton/>
-       </div>
+        <div id="categoriaButton">
+          <CategoriaButton />
+        </div>
         <h1>Portal do Revendedor</h1>
+
+        <div id="categoriaButton">
+          <CategoriaButton />
+        </div>
+        
       </div>
       <div className="produtosFetch">
         {data.map(item => (
