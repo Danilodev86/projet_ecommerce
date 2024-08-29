@@ -1,0 +1,46 @@
+/* Contêiner do dropdown */
+.dropdown {
+    position: relative; /* Para que o menu seja posicionado relativamente a esse contêiner */
+    display: inline-block;
+  }
+  
+  /* Estilização do botão do dropdown */
+  .dropdown-button {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+  }
+  
+  /* Estilização do menu suspenso */
+  .dropdown-menu {
+    display: block; /* Torna o menu visível */
+    position: absolute; /* Posiciona o menu em relação ao botão */
+    background-color: #f9f9f9; /* Cor de fundo do menu */
+    min-width: 200px; /* Largura mínima do menu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Adiciona uma sombra ao menu */
+    border-radius: 5px; /* Arredonda os cantos do menu */
+    z-index: 1; /* Garante que o menu fique acima de outros elementos */
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+  }
+  
+  /* Estilização dos itens do menu */
+  .dropdown-menu li {
+    padding: 12px 16px; /* Espaçamento interno dos itens */
+  }
+  
+  .dropdown-menu li a {
+    color: #000; /* Cor do texto dos itens do menu */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: block; /* Faz com que o link ocupe toda a área do item */
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #ddd; /* Cor de fundo quando o mouse passa sobre o item */
+  }
+  

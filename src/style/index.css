@@ -18,7 +18,7 @@ body {
     text-align: center;
     width: 100%;
     height: 80px;
-    background-color: rgb(189, 235, 243);
+    background-color: rgb(137, 188, 255);
     position: fixed;
     top: 0;
     left: 0;
@@ -77,19 +77,18 @@ body {
 }
 
 #price {
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a fonte */
-    font-size: 24px; /* Aumenta o tamanho da fonte para destacar o preço */
-    font-weight: bold; /* Torna o texto mais forte */
-    color: rgb(0, 26, 255); /* Cor do texto para destaque */
-    background-color: #f0f8ff; /* Adiciona uma cor de fundo clara para destacar */
-    padding: 10px; /* Adiciona espaçamento interno ao redor do texto */
-    border-radius: 5px; /* Arredonda os cantos do fundo */
-    margin-top: 10px; /* Espaço acima do elemento */
-    margin-bottom: 0; /* Remove o espaço abaixo do elemento */
-    text-align: left; /* Alinha o texto à esquerda */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra sutil ao redor do fundo */
-    /* border: 2px solid rgb(0, 26, 255);  */
-    width: 90%; /* Ajusta a largura do elemento com base no conteúdo */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    color: rgb(0, 26, 255); 
+    background-color: #f0f8ff; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-top: 10px;
+    margin-bottom: 0; 
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 90%; 
 }
 
 #price p{
