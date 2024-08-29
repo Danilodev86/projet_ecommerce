@@ -26,7 +26,7 @@ function produtoDetalhes() {
                 <img id="image"  src={data.image} alt={data.title} />
             </span>
 
-            <span>
+            <span >
                 <div id="title">{data.title}</div><br />
                 <h3>Descrição:</h3>
                 <div id="description">{data.description}</div>

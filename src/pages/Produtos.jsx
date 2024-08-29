@@ -27,7 +27,7 @@ function Produtos() {
             <img id="image" src={item.image} alt={item.title} />
             <div id="title">{item.title}</div>
             <span id="price">
-              <Moeda price={item.price} />
+              <Moeda price={item.price} /><p>Pagamento no Pix</p><hr></hr>
             </span>
           </button>
         ))}
