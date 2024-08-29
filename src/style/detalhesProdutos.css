@@ -1,4 +1,4 @@
-/* .detalhesProdutos{
+.detalhesProdutos{
     display: flex;
     gap: 20px;
     width: 800px;
@@ -13,4 +13,4 @@
     margin-top: 40px;
     width: 300px;
     padding: 15px;
-} */
+}

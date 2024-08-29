@@ -27,7 +27,7 @@ function Produtos() {
             <img id="image" src={item.image} alt={item.title} />
             <div id="title">{item.title}</div>
             <span id="price">
-              <Moeda price={item.price} /> {/* Usa o componente Moeda para formatar o preço */}
+              <Moeda price={item.price} />
             </span>
           </button>
         ))}

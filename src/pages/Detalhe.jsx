@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Moeda from "../ultis/formatCurrency";  // Importa o componente Moeda
-// import '../style/detalhesProdutos.css';
+import '../style/detalhesProdutos.css';
 import '../style/zoom.css';
 
 
@@ -18,12 +18,12 @@ function produtoDetalhes() {
     console.log(data);
 
     return (
-        <main>
+        <main >
         <h1>Detalhes do Produtos</h1>
-        <div>
+        <div className="detalhesProdutos" >
                    
-            <span>
-                <img id="image" src={data.image} alt={data.title} />
+            <span className="effectzoom"> 
+                <img id="image"  src={data.image} alt={data.title} />
             </span>
 
             <span>
