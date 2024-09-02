@@ -21,33 +21,42 @@ function Produtos() {
   };
 
   return (
+<main>
+  {data ? (
     <>
-      <div id="topo">
+      <header id="topo">
         <div id="categoriaButton">
           <CategoriaButton />
         </div>
         <h1>Portal do Revendedor</h1>
-
         <div id="categoriaButton">
           <CategoriaButton />
         </div>
-        
-      </div>
-      <div className="produtosFetch">
+      </header>
+      <section className="produtosFetch">
         {data.map(item => (
-          <button className="produtos" key={item.id} onClick={() => Detalhes(item.id)}>
-            <img id="image" src={item.image} alt={item.title} />
-            <div id="title">{item.title}</div>
-            <span id="price">
-              <Moeda price={item.price} /><p>Pagamento no Pix</p><hr></hr>
+          <button
+            className="produtos"
+            key={item.id}
+            onClick={() => Detalhes(item.id)}
+          >
+            <img className="image" src={item.image} alt={item.title} />
+            <div className="title">{item.title}</div>
+            <span className="price">
+              <Moeda price={item.price} />
+              <p>Pagamento no Pix</p>
+              <hr />
             </span>
           </button>
         ))}
-      </div>
-      <div>
+      </section>
       <Footer />
-      </div>
     </>
+  ) : (
+    <h1>Loading</h1>
+  )}
+</main>
+
   );
 }
 

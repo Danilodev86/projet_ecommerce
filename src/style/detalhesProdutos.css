@@ -1,16 +1,24 @@
-.detalhesProdutos{
+.detalhesProudos{
     display: flex;
-    gap: 20px;
     width: 800px;
-    height: 400px;
+    height: 500px;
     background-color: white;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
 
 }
 
-.detalhesProdutos img{
-    margin-top: 40px;
-    width: 300px;
+#image{
+    margin-top: 5px;
+    width: 250px;
     padding: 15px;
+
 }
+#description{
+    text-align: left;
+    padding: 5px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    background-color: rgb(201, 199, 199);
+}
+
