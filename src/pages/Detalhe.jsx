@@ -19,12 +19,12 @@ function produtoDetalhes() {
         <main className="detalhesProudos">
             
             {
-                data ? <div className="detalhesProdutos" >
+                data ? <div>
                     
                     <h2>Detalhes do Produtos</h2>
 
                     <span className="effectzoom">
-                        <img id="image" src={data.image} alt={data.title} />
+                        <img width="100px" id="image" src={data.image} alt={data.title} />
                     </span>
 
                     <span >
@@ -35,7 +35,7 @@ function produtoDetalhes() {
                         <div className="price" id="price">
                             <Moeda price={data.price} /></div><br /><br />
 
-                        <button onClick={handleAdd}>Adicionar no Carrinho</button>
+                        {/* <button onClick={handleAdd}>Adicionar no Carrinho</button> */}
                         <br /><br /><br />
 
                     </span>

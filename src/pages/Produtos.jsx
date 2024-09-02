@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
-import Moeda from "../ultis/formatCurrency";  // Importa o componente Moeda
+import Moeda from "../ultis/formatCurrency";
 import CategoriaButton from "../components/CategoriaButton";
 import Footer from "../components/Footer";
 
@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 function Produtos() {
   const [data, setData] = useState([]);
   const navigate = useNavigate();
+  const [carrinho, setCarrinho] = useState([]);
 
   useEffect(() => {
     fetch('https://fakestoreapi.com/products')
@@ -20,6 +21,12 @@ function Produtos() {
     navigate(`/produto/${id}`);
   };
 
+  const adicionar = (id)=>{
+    const filtro = data.find((product) => +product.id === +id )
+    setCarrinho([...carrinho,filtro])
+  } 
+
+console.log(carrinho)
   return (
 <main>
   {data ? (
@@ -35,19 +42,24 @@ function Produtos() {
       </header>
       <section className="produtosFetch">
         {data.map(item => (
-          <button
-            className="produtos"
-            key={item.id}
-            onClick={() => Detalhes(item.id)}
-          >
-            <img className="image" src={item.image} alt={item.title} />
-            <div className="title">{item.title}</div>
-            <span className="price">
-              <Moeda price={item.price} />
-              <p>Pagamento no Pix</p>
-              <hr />
-            </span>
-          </button>
+          <><button
+          className="produtos"
+          key={item.id}
+          onClick={() => Detalhes(item.id)}
+        >
+          <img className="image" src={item.image} alt={item.title} />
+          <div className="title">{item.title}</div>
+          <span className="price">
+            <Moeda price={item.price} />
+            <p>Pagamento no Pix</p>
+            <hr />
+          </span>
+          
+        </button>
+        
+        <button onClick={adicionar}>Adicionar ao Carrinho</button>
+          
+          </>
         ))}
       </section>
       <Footer />
